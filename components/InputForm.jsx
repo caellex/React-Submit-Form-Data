@@ -9,7 +9,7 @@ const InputForm = ({onDataSubmit}) => { // InputForm accepts the handleSubmitDat
   
     const handleSubmit = (e) => { // Another handleSubmit arrow,
         e.preventDefault();       // prevents reload
-        onDataSubmit({ user, name, age }); // and runs the arrow function in App using the destructured param above.
+        onDataSubmit({ user, name, age }); // and runs the arrow function in App using the destructured prop above.
       };
 
     const setUserVar = (e) => { // Sets the user to what triggered the event's value - in this case the Username input field.
